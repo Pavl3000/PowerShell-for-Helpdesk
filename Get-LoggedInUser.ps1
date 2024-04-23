@@ -1,4 +1,23 @@
-﻿Clear-Host
+<#
+
+This script gathers information from computers on the network based on Active Directory names. It retrieves the following details:
+
+Logged-in User Name: The name of the currently logged-in user.
+MAC Address.
+IP Address.
+Windows Operating System Build Version.
+The manufacturer or vendor of the computer.
+Uptime: The duration for which the computer has been running.
+Number of Connected Monitors.
+
+ #>
+
+
+
+
+
+
+ Clear-Host
 
 # List of computers saved form AD to csv
 # Or you can use Get-ADComputer instead 
