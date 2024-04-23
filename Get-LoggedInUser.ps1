@@ -19,9 +19,9 @@ Number of Connected Monitors.
 
  Clear-Host
 
-# List of computers saved form AD to csv
-# Or you can use Get-ADComputer instead 
-$ComputerNameList = (Import-Csv "C:\Report\ws.csv").имя # Get only first column to variuble 
+# Import a list of computer names from a CSV file saved from Active Directory
+# Alternatively, use Get-ADComputer to retrieve computer details from Active Directory
+$ComputerNameList = (Import-Csv "C:\Report\ws.csv").name # Extracts only the first column and assigns it to the variable. ! Check column name in your csv file. 
 
 # Path to final report document
 $ReportResultPath = "C:\Report\"
